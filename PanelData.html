@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>17 Panel Data | Statistics and Econometrics</title>
+  <meta name="description" content="17 Panel Data | Statistics and Econometrics" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="17 Panel Data | Statistics and Econometrics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="17 Panel Data | Statistics and Econometrics" />
+  
+  
+  
+
+<meta name="author" content="Chi-Yuan Fang" />
+
+
+<meta name="date" content="2021-07-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="AdvancedTimeSeriesTopics.html"/>
+<link rel="next" href="InstrumentalVariables.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Statistics and Econometrics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#ta-information"><i class="fa fa-check"></i>TA Information</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#ta-sessions-schedule"><i class="fa fa-check"></i>TA Sessions Schedule</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#econ-2022-introduction-to-statistics"><i class="fa fa-check"></i>ECON 2022: Introduction to Statistics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#econ-2023-introduction-to-econometrics"><i class="fa fa-check"></i>ECON 2023: Introduction to Econometrics</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>I Probability Theory</b></span></li>
+<li class="chapter" data-level="1" data-path="Introduction.html"><a href="Introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="ProbabilityModel.html"><a href="ProbabilityModel.html"><i class="fa fa-check"></i><b>2</b> Probability Model</a></li>
+<li class="chapter" data-level="3" data-path="RandomVariables.html"><a href="RandomVariables.html"><i class="fa fa-check"></i><b>3</b> Random Variables</a></li>
+<li class="chapter" data-level="4" data-path="DiscreteProbabilityDistributions.html"><a href="DiscreteProbabilityDistributions.html"><i class="fa fa-check"></i><b>4</b> Discrete Probability Distributions</a></li>
+<li class="chapter" data-level="5" data-path="ContinuousProbabilityDistributions.html"><a href="ContinuousProbabilityDistributions.html"><i class="fa fa-check"></i><b>5</b> Continuous Probability Distributions</a></li>
+<li class="chapter" data-level="6" data-path="SamplingDistributions.html"><a href="SamplingDistributions.html"><i class="fa fa-check"></i><b>6</b> Sampling Distributions</a></li>
+<li class="chapter" data-level="7" data-path="AsymptoticTheory.html"><a href="AsymptoticTheory.html"><i class="fa fa-check"></i><b>7</b> Asymptotic Theory</a></li>
+<li class="part"><span><b>II Statistical Inference</b></span></li>
+<li class="chapter" data-level="8" data-path="PointEstimation.html"><a href="PointEstimation.html"><i class="fa fa-check"></i><b>8</b> Point Estimation</a></li>
+<li class="chapter" data-level="9" data-path="IntervalEstimation.html"><a href="IntervalEstimation.html"><i class="fa fa-check"></i><b>9</b> Interval Estimation</a></li>
+<li class="chapter" data-level="10" data-path="AnalysisOfVariance.html"><a href="AnalysisOfVariance.html"><i class="fa fa-check"></i><b>10</b> Analysis Of Variance</a></li>
+<li class="part"><span><b>III Econometrics</b></span></li>
+<li class="chapter" data-level="11" data-path="SimpleLinearRegression.html"><a href="SimpleLinearRegression.html"><i class="fa fa-check"></i><b>11</b> Simple Linear Regression</a></li>
+<li class="chapter" data-level="12" data-path="MultipleLinearRegression.html"><a href="MultipleLinearRegression.html"><i class="fa fa-check"></i><b>12</b> Multiple Linear Regression</a></li>
+<li class="chapter" data-level="13" data-path="NonlinearRegression.html"><a href="NonlinearRegression.html"><i class="fa fa-check"></i><b>13</b> Nonlinear Regression</a></li>
+<li class="chapter" data-level="14" data-path="DataIssues.html"><a href="DataIssues.html"><i class="fa fa-check"></i><b>14</b> Data Issues</a></li>
+<li class="chapter" data-level="15" data-path="StationaryAndNonstationaryVariables.html"><a href="StationaryAndNonstationaryVariables.html"><i class="fa fa-check"></i><b>15</b> Time Series Data: Stationary and Nonstationary Variables</a></li>
+<li class="chapter" data-level="16" data-path="AdvancedTimeSeriesTopics.html"><a href="AdvancedTimeSeriesTopics.html"><i class="fa fa-check"></i><b>16</b> Advanced Time Series Topics</a></li>
+<li class="chapter" data-level="17" data-path="PanelData.html"><a href="PanelData.html"><i class="fa fa-check"></i><b>17</b> Panel Data</a></li>
+<li class="chapter" data-level="18" data-path="InstrumentalVariables.html"><a href="InstrumentalVariables.html"><i class="fa fa-check"></i><b>18</b> Instrumental Variables</a></li>
+<li class="chapter" data-level="19" data-path="SimultaneousEquationsModels.html"><a href="SimultaneousEquationsModels.html"><i class="fa fa-check"></i><b>19</b> Simultaneous Equations Models</a></li>
+<li class="chapter" data-level="20" data-path="Experiments.html"><a href="Experiments.html"><i class="fa fa-check"></i><b>20</b> Experiments</a></li>
+<li class="chapter" data-level="21" data-path="LimitedDependentVariableModels.html"><a href="LimitedDependentVariableModels.html"><i class="fa fa-check"></i><b>21</b> Limited Dependent Variable Models</a></li>
+<li class="chapter" data-level="22" data-path="MachineLearning.html"><a href="MachineLearning.html"><i class="fa fa-check"></i><b>22</b> Machine Learning</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics and Econometrics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="PanelData" class="section level1">
+<h1><span class="header-section-number">17</span> Panel Data</h1>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="AdvancedTimeSeriesTopics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="InstrumentalVariables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
